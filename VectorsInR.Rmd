@@ -1,0 +1,48 @@
+---
+title: "Vectors in R"
+author: "Mia Forsline"
+date: "8/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#create a vector
+vec_a <- c(4, 5)
+```
+
+### Another code chunk that will not show up in the knitted document 
+```{r, echo = FALSE}
+vec_b <- c(-3, 10)
+```
+
+### Vector addition 
+```{r}
+vec_c <- vec_a + vec_b
+```
+
+### Vector subtraction 
+```{r}
+vec_d <- vec_b - vec_a
+```
+
+### Vector scalar 
+```{r}
+vec_e <- 4 * vec_b
+```
+
+### Asterisk multiplies corresponding values (not dot product)
+```{r}
+vec_a * vec_b
+```
+
+### Dot product 
+```{r}
+vec_a %*% vec_b
+#returns a matrix 
+#%*% is used for matrix multiplication 
+```
+
